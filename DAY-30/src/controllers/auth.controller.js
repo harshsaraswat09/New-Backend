@@ -1,8 +1,12 @@
 export async function registerUser(req, res, next) {
-    try {
-        throw new Error("encounter an error while registering new user")
-    } catch (err) {
-        err.status = 400
-        next(err)
-    }
+    
 }
+
+/**
+ * user =>
+ * {
+ * username:{type:String, required:true},
+ * email:{type:String, required:true, unique:true},
+ * password:{type:String, required:true}
+ * }
+ */
